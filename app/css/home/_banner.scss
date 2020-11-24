@@ -1,0 +1,126 @@
+.banner {
+  .container {
+    display: flex;
+
+    .banner-txt {
+      width: 30%;
+      overflow: visible;
+      z-index: 1;
+      padding: 10% 0;
+
+      h3 {
+        color: $creme;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+
+      .b-h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 3.5rem;
+        width: 150%;
+        line-height: 3.7rem;
+        margin: 30px 20px;
+        color: #fff;
+
+        span {
+          align-self: flex-end;
+        }
+      }
+
+      p {
+        width: 130%;
+        overflow: visible;
+        color: #fff;
+        margin: 15% 0 0 10%;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+      }
+
+      a {
+        text-decoration: underline;
+        color: $creme;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+        margin-top: 30%;
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+
+    .banner-img {
+      width: 70%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 650px) {
+  .banner {
+    .container {
+      width: unset;
+      position: relative;
+      height: 90vh;
+
+      .banner-txt {
+        position: absolute;
+        width: 70%;
+        top: 20%;
+        left: 6%;
+
+        h3 {
+          font-size: 0.8rem;
+          margin-left: 7%;
+        }
+
+        .b-h1 {
+          font-size: 1.7rem;
+          width: 100%;
+          line-height: 2.2rem;
+          margin: 15px 20px -20px;
+        }
+
+        p {
+          width: 110%;
+          overflow: visible;
+          color: #fff;
+          margin: 15% 0 0 10%;
+          font-size: 0.75rem;
+          line-height: 1.2rem;
+        }
+
+        a {
+          font-size: 0.7rem;
+          margin-top: 20%;
+          margin-left: 5%;
+        }
+      }
+
+      .banner-img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 1550px) {
+  .banner {
+    .container {
+      .banner-txt {
+        .b-h1 {
+          width: 120%;
+        }
+
+        p {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

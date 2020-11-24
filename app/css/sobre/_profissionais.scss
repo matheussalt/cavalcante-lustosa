@@ -1,0 +1,264 @@
+.profissionais {
+  .prf-txt {
+    width: 50%;
+    margin: 90px auto;
+    padding: 90px 0;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -55%;
+      width: 50%;
+      height: 100%;
+      background-color: #aeaeae;
+      z-index: -1;
+    }
+
+    h3 {
+      color: $creme;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      margin-left: 5%;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      line-height: 1.1rem;
+      color: #fff;
+      margin-left: 10%;
+    }
+  }
+
+  .advogados {
+    display: flex;
+    justify-content: space-between;
+
+    .adv-wrap {
+      width: 48%;
+
+      .img-wrap {
+        position: relative;
+
+        h2 {
+          position: absolute;
+          width: 55%;
+          font-size: 3rem;
+          top: 70%;
+          left: 40%;
+          font-weight: 800;
+          line-height: 3rem;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+
+          span {
+            align-self: flex-end;
+          }
+        }
+
+        .hs-img {
+          width: 70%;
+          position: relative;
+          height: 35vw;
+
+          &:before {
+            position: absolute;
+            background-color: #000;
+            opacity: 0.5;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .midias {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          right: 24%;
+
+          svg {
+            fill: #fff;
+            width: 16px;
+          }
+        }
+      }
+
+      h3 {
+        color: $creme;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        line-height: 1rem;
+        margin: 15px 0;
+        font-weight: 400;
+        width: 35%;
+      }
+
+      h4 {
+        color: #aeaeae;
+        font-size: 0.7rem;
+        letter-spacing: 3px;
+        margin: 0 0 15px 0;
+      }
+
+      p {
+        color: #fff;
+        font-size: 0.85rem;
+        line-height: 1.2rem;
+        width: 90%;
+      }
+
+      a {
+        display: block;
+        text-transform: uppercase;
+        text-decoration: underline #28e6bf;
+        font-size: 0.7rem;
+        letter-spacing: 3.5px;
+        margin-top: 5%;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.nossos-servicos {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .servicos-seta {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3%;
+
+    h2 {
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+      color: #fff;
+      font-weight: 600;
+      width: 70%;
+    }
+
+    svg {
+      fill: #fff;
+      transform: rotate(180deg);
+      margin-top: 10px;
+    }
+  }
+
+  .galeria {
+    width: 60%;
+    display: flex;
+
+    .servico-img {
+      width: 33%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 650px) {
+  .profissionais {
+    .prf-txt {
+      width: 70%;
+      margin: 60px auto;
+      padding: 50px 0;
+
+      p {
+        margin-left: 5%;
+      }
+    }
+
+    .advogados {
+      flex-direction: column;
+
+      .adv-wrap {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .img-wrap {
+          h2 {
+            width: 80%;
+            font-size: 2.7rem;
+            top: 70%;
+            left: 15%;
+          }
+
+          .hs-img {
+            height: 85vw;
+          }
+
+          .midias {
+            top: 0;
+            height: 55%;
+            right: 20%;
+            justify-content: space-between;
+          }
+        }
+
+        h3 {
+          margin: 20px 0;
+          font-weight: 400;
+          width: 100%;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .nossos-servicos {
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
+
+    .servicos-seta {
+      width: 100%;
+      margin-left: unset;
+
+      h2 {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+        width: 100%;
+      }
+
+      svg {
+        margin-top: unset;
+      }
+    }
+
+    .galeria {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and(min-width: 1550px) {
+  .profissionais .advogados .adv-wrap .img-wrap h2 {
+    width: 38%;
+  }
+}

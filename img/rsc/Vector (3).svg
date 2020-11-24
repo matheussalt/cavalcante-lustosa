@@ -1,0 +1,9 @@
+<svg id="arrowg" width="78" height="16" viewBox="0 0 78 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M77 8L1.00001 7.99999M1.00001 7.99999L8.00001 15M1.00001 7.99999L8.00001 0.999994" stroke="url(#pattern0)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77 8L1.00001 7.99999M1.00001 7.99999L8.00001 15M1.00001 7.99999L8.00001 0.999994" stroke="#28E6BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="translate(0 -2.211) scale(0.00120919 0.00656417)"/>
+</pattern>
+</defs>
+</svg>

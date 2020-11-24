@@ -1,0 +1,71 @@
+.artigo-in {
+  padding: 90px 0;
+
+  .container {
+    .artigo-wrapper {
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+      }
+
+      h4 {
+        margin: 20px 5%;
+        color: #4d4d4d;
+        font-size: 0.7rem;
+      }
+
+      h2 {
+        color: #2c2c2c;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        margin: 0 5%;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.1rem;
+        color: #2c2c2c;
+        margin: 20px 5%;
+      }
+
+      .wp-block-file {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          display: initial;
+          color: #2c2c2c;
+
+          margin: 10px 5%;
+          letter-spacing: 2px;
+          font-size: 0.8rem;
+
+          &:nth-of-type(2) {
+            background-color: $creme;
+            display: flex;
+            width: 10%;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 1550px) {
+  .artigo-in {
+    .container {
+      .artigo-wrapper {
+        img {
+          height: 800px;
+        }
+      }
+    }
+  }
+}

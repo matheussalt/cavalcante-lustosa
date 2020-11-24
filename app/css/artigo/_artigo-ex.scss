@@ -1,0 +1,141 @@
+.artigos {
+  padding: 0 0 50px 0;
+  .artigo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    .artigo-wrapper {
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      h4 {
+        margin: 20px 5%;
+        color: $creme;
+        font-size: 0.7rem;
+      }
+
+      h2 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin: 0 5%;
+      }
+
+      p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 1.1rem;
+        color: #fff;
+        margin: 20px 5%;
+      }
+
+      a {
+        display: block;
+        color: $creme;
+        margin: 0 5%;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.noticias {
+  background-color: #212121;
+  padding: 60px 0;
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin: 0 0 50px 10%;
+
+    span {
+      align-self: flex-end;
+    }
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    .news-wrapper {
+      margin-bottom: 20px;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      h4 {
+        margin: 20px 5%;
+        color: $creme;
+        font-size: 0.7rem;
+      }
+
+      h2 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin: 0 5%;
+      }
+
+      p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 1.1rem;
+        color: #fff;
+        margin: 20px 5%;
+      }
+
+      a {
+        display: block;
+        color: $creme;
+        margin: 0 5%;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 650px) {
+  .artigos {
+    .artigo-grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 50px;
+    }
+  }
+
+  .noticias {
+    .news-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media screen and(min-width: 1550px) {
+  .artigos {
+    .artigo-grid {
+      .artigo-wrapper {
+        img {
+          height: 300px;
+        }
+      }
+    }
+  }
+}

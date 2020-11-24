@@ -1,0 +1,14 @@
+/*
+Theme Name: Cavalcante & Lustosa
+Theme URI: http://agenciasalt.com.br
+Author: Luiz Oliveira
+Author URI: Desconhecido
+Description: Tema criado especialmente para o cliente Cavalcante & Lustosa
+Version: 1.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Salt
+Text Domain: Salt Padrão
+*/
+
+@import "./app/style.css";
