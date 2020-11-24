@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div class="cabecalho cabecalho-artigo">
   <div class="container">
-    <div class="sh-txt">
+    <div class="sh-txt" data-anima-tempo>
       <h3>CAVALCANTE & LUSTOSA</h3>
       <h1>Artigos</h1>
     </div>

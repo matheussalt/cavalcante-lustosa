@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div class=" cabecalho">
   <div class="container">
-    <div class="sh-txt">
+    <div class="sh-txt" data-anima-tempo>
       <h3>CAVALCANTE & LUSTOSA</h3>
       <h1>Sobre a <span>empresa</span></h1>
     </div>
@@ -35,9 +35,9 @@ get_header(); ?>
 
   <div class="container sobre-txt">
     <div class="sobre-ab"></div>
-    <h4>Sobre o escritório</h4>
+    <h4 class=" fadeUp" data-animar>Sobre o escritório</h4>
 
-    <div class="stxt-wrapper">
+    <div class="stxt-wrapper fadeUp" data-animar>
       <p>Cavalcante & Lustosa Advogados é um escritório de advocacia em Brasília, estabelecido em 2019, 100%
         especializado e voltado ao atendimento de demandas do Direito Imobiliário e suas áreas afins, tais como questões
         imobiliárias relacionadas ao Direito do Consumidor, ao Direito Contratual, ao Direito Cartorário (Registral e
@@ -55,14 +55,16 @@ get_header(); ?>
 <section class="profissionais">
   <div class="prf-txt">
     <div class="bg-ab"></div>
-    <h3>Sobre os profissionais</h3>
+    <h3 class=" fadeUp" data-animar>Sobre os profissionais</h3>
 
-    <p>Possuímos uma equipe de advogados em Brasília altamente especializada em Direito Imobiliário, sem deixar de lado
+    <p class=" fadeUp" data-animar>Possuímos uma equipe de advogados em Brasília altamente especializada em Direito
+      Imobiliário, sem deixar de lado
       as áreas que possuem interlocução e dão uma visão multidisciplinar com o Direito Imobiliário, tais como o Direito
       Contratual, o Direito do Consumidor, o Direito Cartorário (Notarial e Registral), o Direito de Família e o Direito
       Sucessório.</p>
 
-    <p>Nossos advogados têm atuação diferenciada e olhar estratégico sobre a situação dos nossos clientes, buscando
+    <p class=" fadeUp" data-animar>Nossos advogados têm atuação diferenciada e olhar estratégico sobre a situação dos
+      nossos clientes, buscando
       soluções rápidas e inovadoras, tratando cada problema como se fosse único.</p>
   </div>
 
