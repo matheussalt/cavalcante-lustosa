@@ -8,19 +8,15 @@
  */
 get_header(); ?>
 
-<div class="container cabecalho">
-  <div class="sh-txt">
-    <h3>CAVALCANTE & LUSTOSA</h3>
-    <h1>Contato</h1>
+<div class="cabecalho">
+  <div class="container">
+    <div class="sh-txt">
+      <h3>CAVALCANTE & LUSTOSA</h3>
+      <h1>Contato</h1>
+    </div>
   </div>
 
-  <div class="cabecalho-img">
-    <picture>
-      <source srcset="<?=get_template_directory_URI()?>/img/webp/contato.webp" type="image/webp" />
-      <source srcset="<?=get_template_directory_URI()?>/img/rsc/contato.jpg" type="image/jpg" />
-      <img src="<?=get_template_directory_URI()?>/img/rsc/contato.jpg">
-    </picture>
-  </div>
+  <img class="banner-contato-img" src="<?=get_template_directory_URI()?>/img/rsc/banner_contato.png">
 </div>
 
 <section class="contato">

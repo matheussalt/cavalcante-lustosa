@@ -3,6 +3,8 @@
 
   .servico-grid {
     .alinha {
+      margin-bottom: 50px;
+
       span {
         color: $creme;
         font-size: 0.6rem;
@@ -10,19 +12,16 @@
 
       p {
         color: #fff;
-        font-size: 1.1rem;
-        line-height: 1.1rem;
         font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
       }
     }
 
     .txt-grid {
       p {
         color: #fff;
-        font-size: 0.8rem;
-        line-height: 1.2rem;
         width: 60%;
-        margin-top: 20px;
       }
 
       .hp {
@@ -87,7 +86,6 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
-      margin-top: 50px;
 
       .fp {
         width: 80%;

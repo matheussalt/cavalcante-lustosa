@@ -1,12 +1,22 @@
 .cabecalho {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: visible;
-  transform: translate(0, -23%);
-  width: 90%;
-  max-width: 1150px;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 680px;
+  transform: translate3d(0, -130px, 0);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.cabecalho-artigo {
+    max-height: 480px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
 
   .sh-txt {
     h3 {
@@ -14,17 +24,16 @@
       font-size: 1.2rem;
       letter-spacing: 3px;
       font-weight: 400;
-      text-decoration: underline #28e6bf;
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 76px;
       display: flex;
       flex-direction: column;
-      width: 110%;
+      width: 130%;
       color: #fff;
       margin-top: 30px;
-      line-height: 3.7rem;
+      line-height: 84px;
 
       span {
         align-self: flex-end;
@@ -48,6 +57,8 @@
 }
 
 .sobre {
+  transform: translate3d(0, -160px, 0);
+
   .sobre-txt {
     position: relative;
 
@@ -58,7 +69,7 @@
       right: 0;
       width: 30%;
       height: 100%;
-      background-color: #4d4d4d44;
+      background-color: #4d4d4d;
       z-index: -1;
     }
     h4 {
@@ -75,9 +86,7 @@
 
       p {
         width: 55%;
-        font-size: 0.8rem;
         color: #fff;
-        line-height: 1rem;
       }
     }
   }
@@ -88,14 +97,20 @@
     transform: unset;
     flex-direction: column-reverse;
     width: 100%;
+    max-height: 680px;
+    background-position: 90% 0;
 
-    .cabecalho-img {
-      width: 100%;
-      height: 390px;
-      margin-right: unset;
+    &.cabecalho-artigo {
+      max-height: 300px;
+    }
+
+    .container {
+      align-items: flex-end;
     }
 
     .sh-txt {
+      margin-bottom: 64px;
+
       h3 {
         font-size: 0.9rem;
         letter-spacing: 4px;
@@ -115,6 +130,7 @@
 
   .sobre {
     padding: 60px 0 0;
+    transform: unset;
 
     .sobre-txt {
       .stxt-wrapper {
@@ -122,9 +138,7 @@
 
         p {
           width: 100%;
-          font-size: 0.8rem;
           color: #fff;
-          line-height: 1.15rem;
         }
       }
     }

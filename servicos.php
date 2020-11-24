@@ -8,19 +8,27 @@
  */
 get_header(); ?>
 
-<div class="container cabecalho">
-  <div class="sh-txt">
-    <h3>CAVALCANTE & LUSTOSA</h3>
-    <h1>Nossos <span>Serviços</span></h1>
+<style>
+.cabecalho {
+  background-image: url('<?=get_template_directory_URI()?>/img/rsc/banner_servicos.png');
+}
+</style>
+
+<div class="cabecalho">
+  <div class="container">
+    <div class="sh-txt">
+      <h3>CAVALCANTE & LUSTOSA</h3>
+      <h1>Nossos <span>Serviços</span></h1>
+    </div>
   </div>
 
-  <div class="cabecalho-img">
+  <!-- <div class="cabecalho-img">
     <picture>
       <source srcset="<?=get_template_directory_URI()?>/img/webp/nossos-servicos.webp" type="image/webp" />
       <source srcset="<?=get_template_directory_URI()?>/img/rsc/nossos-servicos.jpg" type="image/jpg" />
       <img src="<?=get_template_directory_URI()?>/img/rsc/nossos-servicos.jpg">
     </picture>
-  </div>
+  </div> -->
 </div>
 
 <section class="servicos">
@@ -267,6 +275,7 @@ get_header(); ?>
         obrigatoriamente de forma judicial. O documento deve ser elaborado seguindo regras para garantir sua validade.
       </p>
 
+      <p></p>
       <p class="fp">O <strong>escritório de Advocacia em Brasília</strong> Cavalcante & Lustosa conta com
         <strong>advogados especializados em
           inventários e testamentos</strong>, à serviço dos clientes para:<br><br>

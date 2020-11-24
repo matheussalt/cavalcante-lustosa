@@ -45,11 +45,9 @@ get_header(); ?>
 
       <p>As matérias jurídicas que envolvem o Direito Imobiliário são complexas e diversas. Dessa forma, acreditamos que
         a atuação especializada é a melhor forma de encontrarmos soluções rápidas e efetivas para os problemas dos
-        nossos clientes.</p>
-
-      <p>Além disso, aliado à precisão técnica, acreditamos e investimentos em uma relação de parceria com os nossos
-        clientes, buscando entender os seus problemas como se fossem nossos
-      </p>
+        nossos clientes.</br></br>
+        Além disso, aliado à precisão técnica, acreditamos e investimentos em uma relação de parceria com os nossos
+        clientes, buscando entender os seus problemas como se fossem nossos</p>
     </div>
   </div>
 </section>

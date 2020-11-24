@@ -51,18 +51,17 @@
       top: 0;
       left: 0;
       width: 100vw;
-      height: 100vh;
-      display: none;
+      height: 0;
       font-size: 20px;
+      display: flex;
       align-items: center;
       background-color: #000;
-      transform: translate3d(0, 100%, 0);
-      transition: 1s transform ease-out;
+      transition: 1.5s height;
+      transition-timing-function: ease-out;
+      z-index: 99;
 
       &.ativo {
-        transform: translate3d(0, 0, 0);
-        z-index: 99;
-        display: flex;
+        height: 100vh;
       }
 
       .header-alinha {
@@ -75,6 +74,17 @@
 
         img {
           width: 7vw;
+          opacity: 0;
+          transform: translate3d(-30px, 0, 0);
+          transition: transform 1s, opacity 1s, visibility 1s;
+          transition-timing-function: ease-out;
+          visibility: hidden;
+
+          &.ativo {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            visibility: visible;
+          }
         }
 
         .menu {
@@ -88,6 +98,16 @@
             margin: 20px 0;
             font-weight: 600;
             position: relative;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate3d(-30px, 0, 0);
+            transition: 1.2s opacity, 1.2s visibility, 1.2s transform;
+
+            &.ativo {
+              opacity: 1;
+              visibility: visible;
+              transform: translate3d(0, 0, 0);
+            }
 
             span {
               font-size: 0.7rem;
@@ -102,6 +122,16 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          opacity: 0;
+          visibility: hidden;
+          transform: translate3d(-30px, 0, 0);
+          transition: 1.5s opacity, 1.5s transform, 1.5s visibility;
+
+          &.ativo {
+            opacity: 1;
+            visibility: visible;
+            transform: translate3d(0, 0, 0);
+          }
 
           .alinha {
             display: flex;
@@ -155,7 +185,8 @@
         background-color: #fff;
         display: block;
         position: relative;
-        transition: 0.5s height ease-in-out;
+        transition: 1s height, 1s transform;
+        transition-timing-function: ease-out;
 
         &::before,
         &::after {
@@ -166,12 +197,26 @@
           background-color: #fff;
           position: absolute;
           top: 8px;
-          transition: 0.5s transform, 0.5s top;
-          transition-timing-function: ease-in-out;
+          transition: 1s transform, width 0.5s;
+          transition-timing-function: ease-out;
         }
 
         &::after {
           top: 16px;
+        }
+      }
+
+      &.ativo {
+        span {
+          transform: rotate(45deg) translate3d(3px, 7px, 0);
+
+          &::before {
+            transform: rotate(-90deg) translate3d(7px, 0, 0);
+          }
+
+          &::after {
+            width: 0;
+          }
         }
       }
     }

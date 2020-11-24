@@ -8,13 +8,21 @@
  */
 get_header(); ?>
 
-<div class="container cabecalho">
-  <div class="sh-txt">
-    <h3>CAVALCANTE & LUSTOSA</h3>
-    <h1>Artigos</h1>
+<style>
+.cabecalho {
+  background-image: url('<?=get_template_directory_URI()?>/img/rsc/banner_artigo.png');
+}
+</style>
+
+<div class="cabecalho cabecalho-artigo">
+  <div class="container">
+    <div class="sh-txt">
+      <h3>CAVALCANTE & LUSTOSA</h3>
+      <h1>Artigos</h1>
+    </div>
   </div>
 
-  <div class="cabecalho-img">
+  <!-- <div class="cabecalho-img">
     <picture>
       <source srcset="<?=get_template_directory_URI()?>/img/webp/artigo-a.webp" type="image/webp" />
       <source srcset="<?=get_template_directory_URI()?>/img/rsc/artigo-a.jpg" type="image/jpg" />
@@ -26,7 +34,7 @@ get_header(); ?>
       <source srcset="<?=get_template_directory_URI()?>/img/rsc/artigo-h.jpg" type="image/jpg" />
       <img src="<?=get_template_directory_URI()?>/img/rsc/artigo-h.jpg">
     </picture>
-  </div>
+  </div> -->
 </div>
 
 <section class="artigos">
