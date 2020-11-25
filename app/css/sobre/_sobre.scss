@@ -110,7 +110,12 @@
     background-position: 90% 0;
 
     &.cabecalho-artigo {
-      max-height: 300px;
+      max-height: 235px;
+      background-position: -305px 0;
+
+      .sh-txt {
+        margin-bottom: 32px;
+      }
     }
 
     .container {
