@@ -77,6 +77,12 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .banner-contato-img {
+    height: 100%;
+  }
+}
+
 @media screen and(max-width: 650px) {
   .banner-contato-img {
     position: absolute;

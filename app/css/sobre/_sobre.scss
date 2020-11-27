@@ -160,7 +160,9 @@
 }
 
 @media screen and(min-width: 1550px) {
-  .cabecalho .cabecalho-img {
-    height: 600px;
+  .cabecalho {
+    .cabecalho-img {
+      height: 600px;
+    }
   }
 }
